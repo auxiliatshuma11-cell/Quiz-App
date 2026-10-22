@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="quiz-container">
+        <h1>TypeScript Quiz</h1>
+        <p class="subtitle">Test your TypeScript knowledge!</p>
+
+        <div id="quizArea">
+            <div class="progress-info">
+                <span id="progress">Question 1 of 10</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <h2 id="question">Question appears here</h2>
+            <div id="options"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <div class="button-group">
+                <button id="submitBtn">Submit Answer</button>
+                <button id="nextBtn" >Next Question</button>
+            </div>
+        </div>
+
+        <section id="result" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="finalScore"></p>
+            <p id="message"></p>
+            <button id="restartBtn">Restart Quiz</button>
+        </section>
+    </main>
+
+    <script type="module" src="Quiz.js"></script>
+</body>
+</html>
